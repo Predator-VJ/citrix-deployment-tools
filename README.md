@@ -1,6 +1,39 @@
-# citrix-deployment-tools
+<div align="center">
 
-A collection of PowerShell scripts for automating Citrix Virtual Apps and Desktops (CVAD) deployment including delivery group management, machine catalog operations, VDA health checks, StoreFront configuration, and more.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff512f,50:dd2476,100:ff512f&height=200&section=header&text=Citrix+Deployment+Tools&fontSize=60&fontColor=ffffff&fontAlign=70&animation=fadeIn&fontAlignY=45&desc=PowerShell+scripts+for+CVAD+deployment+and+automation&descAlign=50&descSize=20"/></div>
+
+<div align="center">
+
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
+![Citrix](https://img.shields.io/badge/Citrix-E71E22?style=for-the-badge&logo=citrix&logoColor=white)
+![CVAD](https://img.shields.io/badge/CVAD-FFA726?style=for-the-badge)
+![Scripts](https://img.shields.io/badge/Scripts-5-blueviolet?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+
+</div>
+
+<div align="center">
+<a href="https://github.com/Predator-VJ/citrix-deployment-tools">
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1000&color=FFA726&center=true&vCenter=true&multiline=false&width=435&lines=Deploy+Delivery+Groups;Deploy+VDIs+at+Scale;Health+Check+VDAs;StoreFront+Config"/>
+</a>
+</div>
+
+<br/>
+
+---
+
+## Script Arsenal
+
+| Script | Description | Category |
+|---|---|---|
+| `Get-CitrixDeliveryGroupStatus.ps1` | Delivery group status & VDA counts | Monitoring |
+| `Get-CitrixStoreFrontStatus.ps1` | StoreFront health & configuration | Configuration |
+| `Get-CitrixVDIHealth.ps1` | VDA health checks & resource usage | Health Check |
+| `New-CitrixDeliveryGroup.ps1` | Create delivery groups | Deployment |
+| `New-CitrixVDI.ps1` | Create new VDI machines | Provisioning |
+
+---
 
 ## Requirements
 
@@ -111,16 +144,14 @@ Creates new Citrix VDA machines for a delivery group.
 
 **Usage:**
 ```powershell
-# Create VDA machines
+# Create VDI machines
 .\New-CitrixVDI.ps1 -MachineName "VDI" -MachineCount 5
 
 # Create with delivery group assignment
 .\New-CitrixVDI.ps1 -MachineName "VDI" -DeliveryGroupName "MyDeliveryGroup" -MachineCount 10
 ```
 
-## README
-
-This project uses an MIT license. See the LICENSE file for details.
+---
 
 ## Contributing
 
@@ -135,4 +166,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Maintained by Predator-VJ
 
 ---
-*For questions or issues, please open a GitHub issue.*
+
+<div align="center">
+<img src="https://badges.pufler.dev/visits/Predator-VJ/citrix-deployment-tools"/>
+</div>
